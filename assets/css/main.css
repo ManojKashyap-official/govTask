@@ -1,0 +1,28 @@
+                .header {
+                    background-color: #fff;
+                    height: 50px;
+                    border-radius: 2px;
+                    border-left: 5px solid #08a21f;
+                }
+                
+                .col-md-4 {
+                    margin-top: 11px;
+                }
+                
+                button.btn.btn-danger {
+                    padding: 3px 70px 3px 70px;
+                }
+                
+                .note {
+                    background-color: teal;
+                    height: 50px;
+                    color: #fff;
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                    border-radius: 2px;
+                }
+                
+                .form-control.box {
+                    height: 44px;
+                    margin-bottom: 10px;
+                }

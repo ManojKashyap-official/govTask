@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="jumbotron">
+
+        <div class="header">
+            <div class="row">
+
+                <div class="col-md-4"><strong>NEWS</strong> </div>
+                <div class="col-md-4"><strong>Idea Down</strong>
+
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-danger"><strong>KYC</strong></button>
+                </div>
+
+            </div>
+        </div>
+        <form method="POST" action="/create">
+            <div class="form-row">
+                <div class="col">
+                    <lable>First Name</lable>
+                    <input type="text" class="form-control" placeholder="First name" name="fname" required>
+                </div>
+                <div class="col">
+                    <lable>Middel Name</lable>
+                    <input type="text" class="form-control" placeholder="Middel name" name="mname">
+                </div>
+                <div class="col">
+                    <lable>Last Name</lable>
+                    <input type="text" class="form-control" placeholder="Last name" name="lname" required>
+                </div>
+            </div>
+
+            <div>
+                <div class="col">
+                    <lable>Company Name</lable>
+                    <input type="text" class="form-control" placeholder="Last name" name="company" required>
+                </div>
+            </div>
+            <hr>
+            <div class="form-row">
+                <div class="col">
+                    <lable>Registration Email Id</lable>
+                    <input type="email" class="form-control" placeholder="First name" name="email" required>
+                </div>
+                <div class="col">
+                    <lable>DOB PAN Card</lable>
+                    <input type="text" class="form-control" placeholder="Middel name" name="dobPan" required>
+                </div>
+                <div class="col">
+                    <lable>PAN Card No.</lable>
+                    <input type="text" class="form-control" placeholder="Last name" name="panNo" required>
+                </div>
+            </div>
+            <hr>
+            <div class=" form-row ">
+                <div class="col ">
+                    <lable>Pin Code</lable>
+                    <input type="text " class="form-control" placeholder="First name" name="pin" required>
+                </div>
+                <div class="col ">
+                    <lable>District</lable>
+                    <input type="text " class="form-control" placeholder="Middel name" name="district" required>
+                </div>
+                <div class="col ">
+                    <lable>State</lable>
+                    <input type="text " class="form-control" placeholder="Last name" name="state" required>
+                </div>
+            </div>
+            <div class="form-row ">
+                <div class="col ">
+                    <lable>City</lable>
+                    <input type="text" class="form-control" placeholder="First name" name="city" required>
+                </div>
+                <div class="col">
+                    <lable>Address as Adhaar Card per Back Side</lable>
+                    <input type="text" class="form-control" placeholder="Middel name" name="addressAdhaar" required>
+                </div>
+
+            </div>
+            <div class="note">
+                <p style="margin-left: 19px;
+                padding-top: 10px;">Note : clear self attrested frontScanned Image required</p>
+            </div>
+            <div class="form-row ">
+                <div class="col ">
+                    <lable>Adhaar Card</lable>
+                    <input type="file" class="form-control box" placeholder="First name " name="adhaarImg" required>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS9BniXWpphryQmuv9UyFrFndk24LVXvUAKUQ&usqp=CAU" alt="HTML5 Icon" style="width:350px;height:250px; margin-bottom: 12px;">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <lable>Pan Card</lable>
+                    <input type="file" class="form-control box" placeholder="Middel name" name="panImg" required>
+                    <div><img src="https://images.ctfassets.net/vkoe68wv76dt/h6eAWYBVW95rVXh72odmV/41f64744b5f122e2a928274150d4dd2f/Pan_Card_Image.jpg" alt="HTML5 Icon" style="width:350px;height:250px;"></div>
+                </div>
+
+            </div>
+
+            <div>
+                <h6> Steps for Upload</h6>
+                <ul>
+                    <li> Dowmload E- Adhaar from <a href="#">https://images.ctfassets.net</a></li>
+                    <li>self attest photos and doucument</li>
+                    <li>send and dUpload self attest adhaar or pan card here</li>
+                </ul>
+            </div>
+            <div>
+                <h6> Steps for Upload</h6>
+                <ul>
+                    <li> Only jpg/png/pdf file can be upload</li>
+                    <li>the Document must be letest and clear</li>
+
+                </ul>
+            </div>
+
+            <input type="submit" class="btn btn-primary" value="Update KYC">
+        </form>
+    </div>
+
+    </div>
+</body>
+<!-- JS, Popper.js, and jQuery -->
+<script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+
+</html>
